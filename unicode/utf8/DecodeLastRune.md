@@ -16,31 +16,31 @@
 
 代码实例：
 
-package main
+	package main
 
-import (
-	"fmt"
-	"unicode/utf8"
-)
+		import (
+			"fmt"
+			"unicode/utf8"
+		)
 
-func main() {
-	b := []byte("Hello, 世界")
+		func main() {
+			b := []byte("Hello, 世界")
 
-	for len(b) > 0 {
-		r, size := utf8.DecodeLastRune(b)
-		fmt.Printf("%c %v\n", r, size)
+			for len(b) > 0 {
+				r, size := utf8.DecodeLastRune(b)
+				fmt.Printf("%c %v\n", r, size)
 
-		b = b[:len(b)-size]
-	}
-}
+				b = b[:len(b)-size]
+			}
+		}
 
 输出:
-界 3
-世 3
-  1
-, 1
-o 1
-l 1
-l 1
-e 1
-H 1
+	界 3
+	世 3
+	  1
+	, 1
+	o 1
+	l 1
+	l 1
+	e 1
+	H 1

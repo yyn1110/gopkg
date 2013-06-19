@@ -129,5 +129,5 @@
     time              : xuyuanp			-
     unicode           : ###				-
         - uft16       : ###				-
-        - uft8        : yyn1110			-2013-06-19
+        - uft8        : yyn1110			2013-06-19
     unsafe            : SnowWee			2013-04-03
